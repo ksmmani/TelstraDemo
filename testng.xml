@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="parallel Browser" parallel="methods">
+  <test thread-count="2" name="Firefox Browser" parallel="methods">
+  <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.wipro.telstra.test.testcases.FlipkartTestCases"/>
+    </classes>
+  </test> <!-- Test Demo -->
+  <test thread-count="2" name="Chrome Browser" parallel="methods">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.wipro.telstra.test.testcases.FlipkartTestCases"/>
+    </classes>
+  </test> 
+  <test thread-count="2" name="IE Browser" parallel="methods">
+  <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="com.wipro.telstra.test.testcases.FlipkartTestCases"/>
+    </classes>
+  </test> 
+</suite> <!-- Demo Suite -->
